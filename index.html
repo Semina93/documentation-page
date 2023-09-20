@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Flexbox Documentation</title>
+</head>
+<body>
+    <nav id="navbar">
+        <header>Flexbox Documentation</header>
+        <ul>
+            <li><a class="nav-link" href="#introduction">Introduction</a></li>
+            <li><a class="nav-link" href="#flexbox_properties">Flexbox Properties</a></li>
+            <li><a class="nav-link" href="#flex_direction">Flex Direction</a></li>
+            <li><a class="nav-link" href="#flex_wrap">Flex Wrap</a></li>
+            <li><a class="nav-link" href="#justify_content">Justify Content</a></li>
+         </ul>
+    </nav>
+    <main id="main-doc">
+        <section class="main-section" id="introduction">
+            <header>Introduction</header>
+            <p>Flexbox is a one-dimensional layout method for arranging items in rows or columns. For a long time, the only tools available for creating CSS layouts were features like floats and positioning. These work, but in some ways they're also limiting and complex.</p>
+            <p>The Flexbox Layout Module makes it easier to design responsive layout without using float or positioning. In this documentation we are going to deal with: </p>
+            <ul>
+                <li>Flexbox Properties</li>
+                <li>Flex Direction</li>
+                <li>Flex Wrap</li>
+                <li>Justify Content</li>
+            </ul>
+            <code>display: flex;</code>
+        </section>
+        <section class="main-section" id="flexbox_properties">
+            <header>Flexbox Properties</header>
+            <p>To start using the Flexbox model, you need to first define a flex container.</p>
+            <p>The flex container contains the flex items.</p>
+            <ul>
+                <li>Properties for the parent (flex container)</li>
+                <li>Properties for the children (flex items)</li>
+            </ul>
+            <code>div class="flex-container"</code>
+        </section>
+        <section class="main-section" id="flex_direction">
+            <header>Flex Direction</header>
+            <p>The flex-direction property defines in which direction the container has to stack the flex items.</p>
+            <p>The values that this property can take are the following:</p>
+            <ul>
+                <li>row (deafault)</li>
+                <li>row-reverse</li>
+                <li>column</li>
+                <li>column-reverse</li>
+            </ul>
+            <code>flex-direction: row;</code>
+        </section>
+        <section class="main-section" id="flex_wrap">
+            <header>Flex Wrap</header>
+            <p>The flex-wrap property specifies whether the flex items should wrap or not.</p>
+            <p>This propetry takes three values:</p>
+            <ul>
+                <li>The nowrap value which that the flex items will not wrap (default).</li>
+                <li>The wrap value specifies that the flex items will wrap if necessary.</li>
+                <li>The wrap-reverse value specifies that the flex items will wrap if necessary but from bottom to top.</li>
+            </ul>
+            <code>flex-wrap: wrap;</code>
+        </section>
+        <section class="main-section" id="justify_content">
+            <header>Justify Content</header>
+            <p>This defines the horizontal alignment (along the main axis).</p>
+            <p>This property takes the following values:</p>
+            <ul>
+                <li>The center value aligns the flex items at the center of the container.</li>
+                <li>The flex-start value aligns the flex items at the beginning of the container (this is default).</li>
+                <li>The flex-end value aligns the flex items at the end of the container.</li>
+                <li>The space-around value displays the flex items with space before, between, and after the lines.</li>
+                <li>The space-between value displays the flex items with space between the lines.</li>
+            </ul>
+            <code>justify-content: center;</code>
+        </section>
+    </main>
+</body>
+</html>
